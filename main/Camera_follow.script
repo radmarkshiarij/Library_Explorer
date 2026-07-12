@@ -1,0 +1,8 @@
+function init(self)
+	self.offset = go.get_position() - go.get_position("/Player")
+end	
+
+function update(self, dt)
+	local player_pos = go.get_position("/Player")
+	go.set_position(player_pos + self.offset, "/camera")
+end

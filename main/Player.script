@@ -1,0 +1,43 @@
+-- Player.script
+
+local speed = 25.0
+
+function init(self)
+	msg.post(".", "acquire_input_focus")
+	self.input = vmath.vector3(0, 0, 0)
+end
+
+function update(self, dt)
+	-- Convert flat input into isometric world directions
+	-- In isometric view: 
+	--   "forward" (W) = moves along X+Z diagonal
+	--   "back"    (S) = moves along X-Z diagonal
+	local move = vmath.vector3(0, 0, 0)
+
+	move.x = move.x + (self.input.x - self.input.y)
+	move.z = move.z + (self.input.x + self.input.y) * -1
+
+	-- Normalize so diagonal isn't faster
+	if vmath.length(move) > 0 then
+		move = vmath.normalize(move)
+	end
+
+	local pos = go.get_position()
+	pos = pos + move * speed * dt
+	go.set_position(pos)
+
+	-- Reset input each frame
+	self.input = vmath.vector3(0, 0, 0)
+end
+
+function on_input(self, action_id, action)
+	if action_id == hash("up") then
+		self.input.y = 1
+	elseif action_id == hash("down") then
+		self.input.y = -1
+	elseif action_id == hash("right") then
+		self.input.x = 1
+	elseif action_id == hash("left") then
+		self.input.x = -1
+	end
+end
