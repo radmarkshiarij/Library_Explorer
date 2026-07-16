@@ -12,6 +12,7 @@ out vec4 out_fragColor;
 uniform mediump sampler2D tex0;
 uniform mediump sampler2D tex_normal;
 uniform mediump sampler2D tex_rough;
+uniform mediump sampler2D tex_metal;
 
 uniform fs_uniforms
 {
@@ -29,6 +30,7 @@ void main()
 	vec3 N = normalize(TBN * mapped_normal);
 
 	float roughness = texture(tex_rough, var_texcoord0.xy).r;
+	float metallic = texture(tex_metal, var_texcoord0.xy).r;
 
 	vec3 ambient_light = vec3(0.2);
 	vec3 light_dir = normalize(var_light.xyz - var_position.xyz);
@@ -40,7 +42,9 @@ void main()
 	float shininess = mix(64.0, 4.0, roughness);
 	float spec = pow(max(dot(N, half_dir), 0.0), shininess) * (1.0 - roughness);
 
-	vec3 final_color = color.rgb * diff_light + vec3(spec);
+	vec3 spec_color = mix(vec3(1.0), color.rgb, metallic);
+	vec3 diffuse_contribution = color.rgb * diff_light * (1.0 - metallic);
+	vec3 final_color = diffuse_contribution + spec_color * spec;
 	
 	out_fragColor = vec4(final_color, 1.0);
 }
