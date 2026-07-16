@@ -8,4 +8,6 @@ Thumbs.db
 *.pyc
 .project
 .cproject
-builtins
+builtins.blend1
+
+*.blend1
