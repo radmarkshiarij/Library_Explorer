@@ -1,0 +1,9 @@
+function on_message(self, message_id, message, sender)
+	if message_id == hash("trigger_response") then
+		if message.enter then
+			msg.post("/Environment#Lib_out", "disable")
+		else
+			msg.post("/Environment#Lib_out", "enable")	
+		end
+	end	
+end
