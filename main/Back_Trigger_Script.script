@@ -1,0 +1,15 @@
+function on_message(self, message_id, message, sender)
+	if message_id == hash("trigger_response") then
+		if message.enter then
+			msg.post("/Environment#Lib_ground", "disable")
+			msg.post("/Environment#lib_GroundFront", "disable")
+			msg.post("/Environment#Lib_roof", "disable")
+			msg.post("/Environment#Lib_roofcap", "disable")
+		else
+			msg.post("/Environment#Lib_ground", "enable")
+			msg.post("/Environment#lib_GroundFront", "enable")
+			msg.post("/Environment#Lib_roof", "enable")
+			msg.post("/Environment#Lib_roofcap", "enable")	
+		end
+	end	
+end
