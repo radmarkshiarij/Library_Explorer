@@ -1,5 +1,4 @@
 -- Player.script
-
 local speed = 25.0
 
 function init(self)
@@ -7,26 +6,37 @@ function init(self)
 	self.input = vmath.vector3(0, 0, 0)
 end
 
+function on_message(self, message_id, message, sender)
+	if message_id == hash("ray_cast_response") then
+		local pos = go.get_position()
+		pos.y = message.position.y
+		go.set_position(pos)
+		-- we'll fill this in next
+	elseif message_id == hash("ray_cast_missed") then
+		print("Ray missed - no ground detected under player")
+		-- we'll fill this in next
+	end
+end
+
 function update(self, dt)
 	-- Convert flat input into isometric world directions
-	-- In isometric view: 
-	--   "forward" (W) = moves along X+Z diagonal
-	--   "back"    (S) = moves along X-Z diagonal
 	local move = vmath.vector3(0, 0, 0)
-
 	move.x = move.x + (self.input.x - self.input.y)
 	move.z = move.z + (self.input.x + self.input.y) * -1
-
-	-- Normalize so diagonal isn't faster
 	if vmath.length(move) > 0 then
 		move = vmath.normalize(move)
 	end
 
 	local pos = go.get_position()
 	pos = pos + move * speed * dt
-	go.set_position(pos)
 
-	-- Reset input each frame
+	local ray_height = 10.0
+	local ray_depth = 20.0
+	local from = vmath.vector3(pos.x, pos.y + ray_height, pos.z)
+	local to = vmath.vector3(pos.x, pos.y - ray_depth, pos.z)
+	physics.raycast_async(from, to, {hash("Environment")})
+
+	go.set_position(pos)
 	self.input = vmath.vector3(0, 0, 0)
 end
 
