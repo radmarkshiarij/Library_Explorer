@@ -12,11 +12,18 @@ function on_message(self, message_id, message, sender)
 		pos.y = message.position.y
 		go.set_position(pos)
 		-- we'll fill this in next
+		
 	elseif message_id == hash("ray_cast_missed") then
 		print("Ray missed - no ground detected under player")
 		-- we'll fill this in next
+		
+	elseif message_id == hash("contact_point_response") then
+			local pos = go.get_position()
+			local normal = message.normal*message.distance
+			go.set_position(pos + normal)
 	end
 end
+
 
 function update(self, dt)
 	-- Convert flat input into isometric world directions
