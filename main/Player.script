@@ -9,18 +9,22 @@ end
 function on_message(self, message_id, message, sender)
 	if message_id == hash("ray_cast_response") then
 		local pos = go.get_position()
-		pos.y = message.position.y
+		local target_y = message.position.y
+		print(target_y)
+		pos.y = pos.y + (target_y - pos.y) * 0.3
 		go.set_position(pos)
-		-- we'll fill this in next
 		
 	elseif message_id == hash("ray_cast_missed") then
 		print("Ray missed - no ground detected under player")
 		-- we'll fill this in next
 		
 	elseif message_id == hash("contact_point_response") then
+		if math.abs(message.normal.y) < 0.5 then
+			print("push", message.normal.x, message.normal.y, message.normal.z, message.distance)
 			local pos = go.get_position()
-			local normal = message.normal*message.distance
+			local normal = message.normal * message.distance
 			go.set_position(pos + normal)
+		end
 	end
 end
 
