@@ -503,11 +503,15 @@ embedded_instances {
   "embedded_components {\n"
   "  id: \"model\"\n"
   "  type: \"model\"\n"
-  "  data: \"mesh: \\\"/builtins/assets/gltf/cube.gltf\\\"\\n"
+  "  data: \"mesh: \\\"/assets/Playable_Char.glb\\\"\\n"
   "name: \\\"{{NAME}}\\\"\\n"
   "materials {\\n"
   "  name: \\\"default\\\"\\n"
   "  material: \\\"/builtins/materials/model.material\\\"\\n"
+  "  textures {\\n"
+  "    sampler: \\\"tex0\\\"\\n"
+  "    texture: \\\"/assets/BaseMPC.png\\\"\\n"
+  "  }\\n"
   "}\\n"
   "\"\n"
   "}\n"
@@ -539,9 +543,18 @@ embedded_instances {
   "}\n"
   ""
   position {
-    x: 56.0
-    y: 4.0
-    z: -36.0
+    x: 60.0
+    y: -4.0
+    z: -32.0
+  }
+  rotation {
+    y: 1.0
+    w: 6.123234E-17
+  }
+  scale3 {
+    x: 0.3
+    y: 0.3
+    z: 0.3
   }
 }
 embedded_instances {
