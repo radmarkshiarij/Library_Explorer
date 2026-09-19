@@ -1,0 +1,6 @@
+right: "/assets/px.png"
+left: "/assets/nx.png"
+top: "/assets/py.png"
+bottom: "/assets/ny.png"
+front: "/assets/pz.png"
+back: "/assets/nz.png"

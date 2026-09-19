@@ -1,0 +1,20 @@
+#version 140 
+
+uniform vs_uniforms
+{
+	uniform mediump mat4 view_proj;
+	uniform mediump mat4 world;
+};
+
+in highp vec3 position;
+
+out mediump vec3 var_texcoord0;
+
+void main()
+{
+	mat4 wvp = world * view_proj;
+	vec4 wvp_pos = wvp * vec4(position, 1.0);
+	gl_Position = wvp_pos.xyww;
+
+	var_texcoord0 = position;
+}
