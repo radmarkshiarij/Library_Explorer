@@ -4,7 +4,7 @@ dependencies =
 
 [bootstrap]
 main_collection = /main/main.collectionc
-render = /builtins/render/default.renderc
+render = /Skybox/Skybox.renderc
 
 [input]
 game_binding = /input/game.input_bindingc

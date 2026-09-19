@@ -1,7 +1,27 @@
 name: "Glass"
-tags: "model"
+tags: "transparent"
 vertex_program: "/main/Glass.vp"
 fragment_program: "/main/Glass.fp"
+vertex_constants {
+  name: "mtx_worldview"
+  type: CONSTANT_TYPE_WORLDVIEW
+}
+vertex_constants {
+  name: "mtx_proj"
+  type: CONSTANT_TYPE_PROJECTION
+}
+vertex_constants {
+  name: "mtx_world"
+  type: CONSTANT_TYPE_WORLD
+}
+vertex_constants {
+  name: "mtx_normal"
+  type: CONSTANT_TYPE_NORMAL
+}
+vertex_constants {
+  name: "mtx_view_inv"
+  type: CONSTANT_TYPE_VIEW_INVERSE
+}
 fragment_constants {
   name: "tint"
   type: CONSTANT_TYPE_USER
@@ -9,6 +29,31 @@ fragment_constants {
     x: 0.6
     y: 0.8
     z: 1.0
-    w: 1.0
+    w: 0.2
+  }
+}
+fragment_constants {
+  name: "fresnel_power"
+  type: CONSTANT_TYPE_USER
+  value {
+    x: 10.0
+  }
+}
+samplers {
+  name: "env_cubemap"
+  wrap_u: WRAP_MODE_REPEAT
+  wrap_v: WRAP_MODE_REPEAT
+  filter_min: FILTER_MODE_MIN_NEAREST
+  filter_mag: FILTER_MODE_MAG_NEAREST
+  max_anisotropy: 0.0
+}
+attributes {
+  name: "normal"
+  semantic_type: SEMANTIC_TYPE_NORMAL
+  double_values {
+    v: 0.0
+    v: 0.0
+    v: 0.0
+    v: 0.0
   }
 }

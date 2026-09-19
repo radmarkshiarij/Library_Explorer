@@ -4,6 +4,7 @@ function on_message(self, message_id, message, sender)
 			msg.post("/Environment#lib_GroundFront", "disable")
 			msg.post("/Environment#Lib_roof", "disable")
 			msg.post("/Environment#Lib_roofcap", "disable")
+			msg.post("/Environment#Glass panes bot1", "disable")
 		else
 			msg.post("/Environment#lib_GroundFront", "enable")
 			msg.post("/Environment#Lib_roof", "enable")

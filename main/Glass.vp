@@ -1,15 +1,30 @@
 #version 140
 
 in highp vec4 position;
+in highp vec4 normal;
 
 uniform vs_uniforms
 {
 	mediump mat4 mtx_worldview;
 	mediump mat4 mtx_proj;
+	mediump mat4 mtx_world;
+	mediump mat4 mtx_normal;
+	mediump mat4 mtx_view_inv;
 };
+
+out highp vec3 var_world_pos;
+out highp vec3 var_world_normal;
+out highp vec3 var_camera_pos;
 
 void main()
 {
+	vec4 world_pos = mtx_world * vec4(position.xyz, 1.0);
+	var_world_pos = world_pos.xyz;
+
+	var_world_normal = normalize((mtx_normal * vec4(normal.xyz, 0.0)).xyz);
+
+	var_camera_pos = mtx_view_inv[3].xyz;
+
 	vec4 p = mtx_worldview * vec4(position.xyz, 1.0);
 	gl_Position = mtx_proj * p;
 }
