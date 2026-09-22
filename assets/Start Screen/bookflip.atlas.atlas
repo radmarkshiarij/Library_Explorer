@@ -1,0 +1,566 @@
+animations {
+  id: "Flip"
+  images {
+    image: "/Ancient Book/Animation/0001.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0002.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0003.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0004.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0005.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0006.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0007.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0008.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0009.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0010.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0011.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0012.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0013.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0014.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0015.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0016.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0017.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0018.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0019.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0020.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0021.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0022.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0023.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0024.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0025.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0026.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0027.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0028.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0029.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0030.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0031.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0032.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0033.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0034.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0035.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0036.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0037.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0038.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0039.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0040.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0041.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0042.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0043.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0044.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0045.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0046.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0047.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0048.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0049.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0050.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0051.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0052.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0053.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0054.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0055.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0056.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0057.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0058.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0059.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0060.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0061.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0062.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0063.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0064.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0065.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0066.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0067.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0068.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0069.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0070.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0071.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0072.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0073.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0074.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0075.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0076.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0077.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0078.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0079.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0080.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0081.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0082.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0083.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0084.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0085.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0086.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0087.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0088.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0089.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0090.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0091.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0092.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0093.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0094.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0095.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0096.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0097.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0098.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0099.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0100.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0101.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0102.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0103.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0104.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0105.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0106.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0107.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0108.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0109.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0110.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0111.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0112.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0113.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0114.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0115.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0116.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0117.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0118.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0119.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0120.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0121.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0122.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0123.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0124.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0125.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0126.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0127.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0128.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0129.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0130.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0131.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0132.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0133.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0134.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0135.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0136.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0137.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0138.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0139.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0140.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0141.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0142.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0143.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0144.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0145.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0146.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0147.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0148.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0149.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0150.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0151.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0152.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0153.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0154.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0155.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0156.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0157.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0158.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0159.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0160.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0161.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0162.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0163.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0164.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0165.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0166.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0167.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0168.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0169.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0170.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0171.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0172.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0173.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0174.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0175.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0176.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0177.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0178.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0179.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0180.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0181.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0182.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0183.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0184.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0185.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0186.png"
+  }
+  images {
+    image: "/Ancient Book/Animation/0187.png"
+  }
+  fps: 24
+}
+extrude_borders: 2

@@ -1608,7 +1608,42 @@ embedded_instances {
 }
 embedded_instances {
   id: "go"
-  data: ""
+  data: "embedded_components {\n"
+  "  id: \"Books\"\n"
+  "  type: \"model\"\n"
+  "  data: \"mesh: \\\"/assets/books.glb\\\"\\n"
+  "name: \\\"{{NAME}}\\\"\\n"
+  "materials {\\n"
+  "  name: \\\"Books\\\"\\n"
+  "  material: \\\"/main/Model_PBR.material\\\"\\n"
+  "  textures {\\n"
+  "    sampler: \\\"tex0\\\"\\n"
+  "    texture: \\\"/assets/Books.png\\\"\\n"
+  "  }\\n"
+  "  textures {\\n"
+  "    sampler: \\\"tex_metal\\\"\\n"
+  "    texture: \\\"/assets/default_black_metallic.png\\\"\\n"
+  "  }\\n"
+  "  textures {\\n"
+  "    sampler: \\\"tex_normal\\\"\\n"
+  "    texture: \\\"/assets/books norm.png\\\"\\n"
+  "  }\\n"
+  "  textures {\\n"
+  "    sampler: \\\"tex_rough\\\"\\n"
+  "    texture: \\\"/assets/books rough.png\\\"\\n"
+  "  }\\n"
+  "}\\n"
+  "\"\n"
+  "  position {\n"
+  "    x: -13.0\n"
+  "    y: 11.0\n"
+  "    z: -187.0\n"
+  "  }\n"
+  "}\n"
+  ""
+  scale3 {
+    y: 0.94239
+  }
 }
 embedded_instances {
   id: "Skybox"

@@ -1,0 +1,38 @@
+import re
+
+atlas_path = "book_flip.atlas"  # update this path if needed
+
+with open(atlas_path, "r") as f:
+    content = f.read()
+
+# Find the "animations { ... }" block
+anim_match = re.search(r"(animations\s*\{)(.*?)(\n\}\n?)", content, re.DOTALL)
+if not anim_match:
+    raise Exception("Could not find animations block")
+
+before, anim_body, after = anim_match.groups()
+
+# Extract each "images { image: "..." }" entry inside the animation block
+image_entries = re.findall(r'images\s*\{\s*image:\s*"([^"]+)"\s*\}', anim_body)
+
+# Sort numerically by the number in the filename
+def frame_number(path):
+    m = re.search(r"(\d+)\.png$", path)
+    return int(m.group(1)) if m else 0
+
+sorted_images = sorted(image_entries, key=frame_number)
+
+# Rebuild the image entries as text
+new_entries = "".join(f'  images {{\n    image: "{img}"\n  }}\n' for img in sorted_images)
+
+# Find where non-image lines (fps, playback, id) live in anim_body, to preserve them
+non_image_lines = re.sub(r'images\s*\{\s*image:\s*"[^"]+"\s*\}\n?', "", anim_body)
+
+new_anim_body = non_image_lines.strip("\n") + "\n" + new_entries
+
+new_content = content[:anim_match.start()] + before + "\n" + new_anim_body + after + content[anim_match.end():]
+
+with open(atlas_path, "w") as f:
+    f.write(new_content)
+
+print(f"Sorted {len(sorted_images)} frames.")

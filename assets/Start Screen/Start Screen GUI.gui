@@ -1,0 +1,16 @@
+nodes {
+  position {
+    x: 672.0
+    y: 356.0
+  }
+  size {
+    x: 768.0
+    y: 432.0
+  }
+  type: TYPE_BOX
+  id: "box"
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+}
+material: "/builtins/materials/gui.material"
+adjust_reference: ADJUST_REFERENCE_PARENT
