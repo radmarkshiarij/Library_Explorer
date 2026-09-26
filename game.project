@@ -3,7 +3,7 @@ title = Library Desktop
 dependencies = 
 
 [bootstrap]
-main_collection = /main/main.collectionc
+main_collection = /assets/Start Screen/Start screen.collectionc
 render = /Skybox/Skybox.renderc
 
 [input]

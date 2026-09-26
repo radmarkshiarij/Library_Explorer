@@ -1,2 +1,20 @@
 name: "Start screen"
 scale_along_z: 0
+embedded_instances {
+  id: "go"
+  data: "components {\n"
+  "  id: \"Start Screen GUI\"\n"
+  "  component: \"/assets/Start Screen/Start Screen GUI.gui\"\n"
+  "}\n"
+  ""
+}
+embedded_instances {
+  id: "main_loader"
+  data: "embedded_components {\n"
+  "  id: \"main_proxy.collectionproxy\"\n"
+  "  type: \"collectionproxy\"\n"
+  "  data: \"collection: \\\"/main/main.collection\\\"\\n"
+  "\"\n"
+  "}\n"
+  ""
+}

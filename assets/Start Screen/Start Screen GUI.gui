@@ -1,16 +1,99 @@
+script: "/assets/Start Screen/Start screen gui script.gui_script"
+fonts {
+  name: "Start font"
+  font: "/assets/Start Screen/Start font.font"
+}
+textures {
+  name: "bookflip"
+  texture: "/assets/Start Screen/bookflip.atlas"
+}
+textures {
+  name: "Background"
+  texture: "/assets/Start Screen/Background.atlas"
+}
 nodes {
   position {
-    x: 672.0
-    y: 356.0
+    x: 640.0
+    y: 360.0
   }
-  size {
-    x: 768.0
-    y: 432.0
+  scale {
+    x: 0.67
+    y: 0.67
+    z: 0.68
   }
   type: TYPE_BOX
-  id: "box"
+  texture: "Background/Lib_blenderrender"
+  id: "Background"
   inherit_alpha: true
   size_mode: SIZE_MODE_AUTO
 }
+nodes {
+  scale {
+    x: 1.8
+    y: 1.8
+  }
+  type: TYPE_BOX
+  texture: "bookflip/Flip"
+  id: "Flip"
+  parent: "Background"
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  position {
+    x: 120.0
+  }
+  scale {
+    x: 2.0
+    y: 2.0
+  }
+  size {
+    x: 200.0
+    y: 100.0
+  }
+  color {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+  }
+  type: TYPE_TEXT
+  text: "Start"
+  font: "Start font"
+  id: "Start button text"
+  parent: "Background"
+  inherit_alpha: true
+  alpha: 0.0
+  material: "always_on_top_font"
+}
+nodes {
+  position {
+    x: -170.0
+  }
+  scale {
+    x: 3.0
+    y: 3.0
+  }
+  size {
+    x: 200.0
+    y: 100.0
+  }
+  color {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+  }
+  type: TYPE_TEXT
+  text: "Library \n"
+  "Explorer"
+  font: "Start font"
+  id: "Library Explorer title"
+  parent: "Background"
+  inherit_alpha: true
+  material: "always_on_top_font"
+}
 material: "/builtins/materials/gui.material"
 adjust_reference: ADJUST_REFERENCE_PARENT
+materials {
+  name: "always_on_top_font"
+  material: "/builtins/fonts/debug/always_on_top_font.material"
+}

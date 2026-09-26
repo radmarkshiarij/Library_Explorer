@@ -2,6 +2,7 @@
 local speed = 20.0
 
 function init(self)
+	print("PLAYER INIT RAN")
 	msg.post(".", "acquire_input_focus")
 	self.input = vmath.vector3(0, 0, 0)
 	self.moving = false
@@ -63,6 +64,7 @@ end
 
 function on_input(self, action_id, action)
 	--print("input:", action_id)
+	print("PLAYER ON_INPUT:", action_id)
 	if action_id == hash("up") then
 		self.input.y = 1
 	elseif action_id == hash("down") then

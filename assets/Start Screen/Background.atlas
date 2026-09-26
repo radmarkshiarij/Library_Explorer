@@ -1,0 +1,4 @@
+images {
+  image: "/assets/Lib_blenderrender.png"
+}
+extrude_borders: 2

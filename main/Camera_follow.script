@@ -6,3 +6,7 @@ function update(self, dt)
 	local player_pos = go.get_position("/Player")
 	go.set_position(player_pos + self.offset, "/camera")
 end
+
+function on_input(self, action_id, action)
+	print("CAMERA GOT INPUT:", action_id)
+end

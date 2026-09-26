@@ -1,0 +1,26 @@
+fonts {
+  name: "always_on_top"
+  font: "/assets/Start Screen/Start font.font"
+}
+nodes {
+  position {
+    x: 645.0
+    y: 50.0
+  }
+  size {
+    x: 700.0
+    y: 100.0
+  }
+  color {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+  }
+  type: TYPE_TEXT
+  text: "Library Entrance"
+  font: "always_on_top"
+  id: "Location text"
+  inherit_alpha: true
+}
+material: "/builtins/materials/gui.material"
+adjust_reference: ADJUST_REFERENCE_PARENT

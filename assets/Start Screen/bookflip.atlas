@@ -555,12 +555,6 @@ animations {
   images {
     image: "/Ancient Book/Animation/0185.png"
   }
-  images {
-    image: "/Ancient Book/Animation/0186.png"
-  }
-  images {
-    image: "/Ancient Book/Animation/0187.png"
-  }
   fps: 24
 }
 extrude_borders: 2
